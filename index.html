@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaida Variedad - Tienda Online</title>
+    <style>
+        :root {
+            --color-primary: #ff6b6b;
+            --color-secondary: #4ecdc4;
+            --color-accent: #ffd166;
+            --color-dark: #2c3e50;
+            --color-light: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--color-light);
+            color: var(--color-dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .address {
+            background-color: var(--color-accent);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-title {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: var(--color-dark);
+            font-size: 1.2rem;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background-color: var(--color-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>✨ Kawaida Variedad ✨</h1>
+        <p>Productos artesanales y de alta calidad para tu hogar</p>
+    </header>
+    
+    <div class="container">
+        <div class="address">
+            <h2><i class="fas fa-map-marker-alt"></i> Nuestra Ubicación</h2>
+            <p>Barrio Limedec, Bloque A, Manzana 1, Casa 3</p>
+            <a href="https://lisbethpantoja2003.wixsite.com/kawaida-variedades" target="_blank" class="whatsapp-btn">
+                <i class="fas fa-globe"></i> Visitar Sitio Oficial
+            </a>
+        </div>
+        
+        <h2>Nuestros Productos</h2>
+        <div class="products">
+            <div class="product-card">
+                <h3 class="product-title">Mochilas Tejidas</h3>
+                <p>Mochilas artesanales tejidas a mano con materiales de alta calidad.</p>
+                <p class="product-price">$100.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Duendes Místicos</h3>
+                <p>Figuras decorativas de duendes que traen buena suerte a tu hogar.</p>
+                <p class="product-price">$120.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Detalles para toda ocasión</h3>
+                <p>Elaboramos detalles personalizados para cualquier celebración especial.</p>
+                <p class="product-price">$40.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Ramos en Flores Eternas</h3>
+                <p>Hermosos ramos que perduran en el tiempo, elaborados con flores preservadas.</p>
+                <p class="product-price">$40.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Bata de Baño Suave</h3>
+                <p>Bata de baño con textura suave y absorbente para máximo confort.</p>
+                <p class="product-price">$75.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Bata de Baño Elegante</h3>
+                <p>Bata de baño con detalles lujosos y acabados premium.</p>
+                <p class="product-price">$90.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Bata de Baño Clásica</h3>
+                <p>Bata de baño con diseño tradicional, cómoda y duradera.</p>
+                <p class="product-price">$80.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Top Lencería Hogar</h3>
+                <p>Top de lencería cómodo y elegante para uso en el hogar.</p>
+                <p class="product-price">$50.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Arreglo de Vestidos</h3>
+                <p>Servicio de arreglo y ajuste de vestidos a medida.</p>
+                <p class="product-price">$60.000</p>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-title">Conjunto de Lencería</h3>
+                <p>Conjunto completo de lencería elegante y cómoda.</p>
+                <p class="product-price">$85.000</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="https://wa.me/573163937898" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Kawaida Variedad. Todos los derechos reservados.</p>
+        <p>Barrio Limedec, Bloque A, Manzana 1, Casa 3</p>
+        <p>WhatsApp: +573163937898</p>
+    </footer>
+    
+    <!-- Código de Tidio Chat -->
+    <script src="//code.tidio.co/fawvw3uunioazwgkhhalvqzejznljz01.js" async></script>
+</body>
+</html>
